@@ -1,0 +1,70 @@
+@import '_variables';
+
+.bs-docs-section {
+	margin-top: 4rem;
+	background-color: $white;
+}
+
+.typo {
+	.title {
+		font-size: 40px;
+		font-weight: bold;
+	}
+}
+
+.btn {
+	text-transform: uppercase;
+	border: none;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+	transition: color .4s, background-color .4s, border-color .4s, box-shadow .4s;
+
+	&-link {
+	  box-shadow: none;
+	  color: $link-color;
+
+	  &:hover,
+	  &:focus {
+		box-shadow: none;
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	  }
+
+	  &.disabled,
+	  &[disabled],
+	  fieldset[disabled] & {
+		&:hover,
+		&:active:hover {
+		  color: $btn-link-disabled-color;
+		  text-decoration: none;
+		}
+	  }
+	}
+
+	&-secondary {
+	  &.disabled,
+	  &[disabled],
+	  fieldset[disabled] & {
+		background-color: rgba(0, 0, 0, .1);
+		color: rgba(0, 0, 0, .4);
+		opacity: 1;
+
+		&:hover,
+		&:focus {
+		  background-color: rgba(0, 0, 0, .1);
+		}
+	  }
+	}
+
+	&-outline-secondary {
+	  border-color: $gray-200;
+	  color: $gray-300;
+	}
+
+	&-warning {
+	  color: $white;
+	}
+}
+
+.nav-tabs {
+	margin-bottom: 15px;
+}
